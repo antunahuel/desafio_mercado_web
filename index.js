@@ -26,7 +26,17 @@ app.listen(3000,()=>{
    console.log( "Servidor escuchando en puerto http://localhost:3000");
 })
 
-
+let productos = [
+    {id:1, nombre:"banana", img:"banana.png"},
+    {id:2, nombre:"cebollas", img:"cebollas.png"},
+    {id:3, nombre:"lechuga", img:"lechuga.png"},
+    {id:4, nombre:"papas", img:"papas.png"},
+    {id:5, nombre:"pimenton", img:"pimenton.png"},
+    {id:6, nombre:"tomate", img:"tomate.png"}
+]
 app.get("/",(req,res)=>{
-    res.render("home")
+    res.render("home",{
+        titulo: "Bienvenido a Mercado Web, seleccione sus productos",
+        productos
+    })
 })

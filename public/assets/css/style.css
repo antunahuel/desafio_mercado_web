@@ -1,0 +1,16 @@
+.btn-modal {
+    background-color: transparent;
+    border: none;
+}
+
+.contenedor-producto img{
+    width: 60%;
+}
+
+.enlace {
+    opacity: 0.5;
+}
+
+.enlace:hover {
+    opacity: 1;
+}

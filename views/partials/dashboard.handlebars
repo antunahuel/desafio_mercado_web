@@ -1,0 +1,12 @@
+<div class="d-flex justify-content-center py-5 row">
+    {{#each productos}}
+
+    <div class="contenedor-producto col-12 col-sm-6 col-md-4">
+        
+        <div class=" mx-5 w-50">
+            <p class="text-center fs-3">{{nombre}}</p>
+            <a class="enlace" href="#"><img class="d-block mx-auto" src="/assets/img/{{img}}" alt={{nombre}}></a>
+        </div>
+    </div>
+    {{/each}}
+</div>
